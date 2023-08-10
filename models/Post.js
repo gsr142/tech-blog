@@ -24,10 +24,12 @@ Post.init(
         },
         user_id: {
             type: DataTypes.INTEGER,
+            allowNull: true,
             references: { model: User, key: 'id'}
         },
         comment_id: {
             type: DataTypes.INTEGER,
+            allowNull: true,
             references: {model: Comment, key: 'id'}
         }
     },
