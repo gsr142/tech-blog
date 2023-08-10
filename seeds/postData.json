@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Handlebars is fun",
+        "text": "This is the most fun I have ever had in my entire life.",
+        "user_id": 1
+    },
+    {
+        "title": "Nodemon is a great tool",
+        "text": "Makes it so easy to develop without having to constantly restart the server.",
+        "user_id": 2
+    }
+]
