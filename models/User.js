@@ -19,10 +19,6 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        user_name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -41,11 +37,13 @@ User.init(
         
         post_id: {
             type: DataTypes.INTEGER,
+            allowNull: true,
             references: { model: Post, key: 'id' }
             
         },
         comment_id: {
             type: DataTypes.INTEGER,
+            allowNull: true,
             references: { model: Comment, key: 'id' }
         }
     },
